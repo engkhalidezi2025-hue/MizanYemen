@@ -30,7 +30,7 @@
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
-</head>
+<style>@media(max-width:768px){aside{position:fixed!important;right:0;top:0;height:100%!important;z-index:50!important} main{width:100vw!important;max-width:100vw!important;margin:0!important}}</style></head>
 <body>
     <div id="root"></div>
 
@@ -317,7 +317,7 @@
               )}
 
               {/* Sidebar */}
-              <aside className={`${isSidebarOpen ? 'w-72' : 'w-24'} bg-slate-900 transition-all duration-300 flex flex-col shrink-0 z-30`}>
+              <aside className={`${isSidebarOpen ? 'w-72' : 'w-0 overflow-hidden'} bg-slate-900 transition-all duration-300 flex flex-col fixed right-0 top-0 h-full z-50`}>
                 <div className="h-24 flex items-center justify-between px-6 bg-black/10">
                    <i className="fas fa-scale-balanced text-3xl text-amber-500 mx-auto"></i>
                 </div>
